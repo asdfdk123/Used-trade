@@ -69,7 +69,7 @@ app.post('/api/rotate-servo', async (req, res) => {
               'Content-Type': 'application/json',
               'Content-Length': Buffer.byteLength(jsonData)
           },
-          timeout: 10000 // 10초로 타임아웃 증가
+          timeout: 500 // 10초로 타임아웃 증가
       });
 
       // Arduino 응답 확인
